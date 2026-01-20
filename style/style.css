@@ -66,9 +66,10 @@ nav ul a:hover{
     border-radius: 5px;
 }
 
-nav h2{
+nav h2 a{
     color: #FFFFFF;
     font-size: 2.5rem;
+    text-decoration: none;
 }
 
 nav h2 .gradient{
@@ -87,7 +88,6 @@ nav .menu-display{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
     padding: 100px 0;
 }
 
@@ -516,18 +516,20 @@ footer{
         width:70%;
         margin: 0 auto;
     }
-    .banner-btn {
+    .banner-btn{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 12px;
-        flex-wrap: nowrap;
+        flex-direction: column;
     }
-
     .banner-btn1, .banner-btn2 {
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
         padding: 10px 14px;
         font-size: 0.85rem;
-        white-space: nowrap;
+    }
+
+    @keyframes myAnimation {
+    50%  {right:100px; top:75px;}
     }
 
     /* About Section  */
@@ -577,7 +579,7 @@ footer{
         gap: 24px;
     }
 
-    /* Host  */
+    /* Host Section  */
     .host{
         flex-direction: column;
         text-align: center;
