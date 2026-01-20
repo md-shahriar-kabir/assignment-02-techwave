@@ -8,6 +8,7 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
 .container{
     max-width: 75%;
 }
@@ -32,7 +33,7 @@ button:hover{
 
 nav{
     background-color: #1A0B2E;
-    border-bottom: 1px solid #18151c;
+    border-bottom: 0.7px solid #7b3fc9;;
 }
 
 .nav-container{
@@ -59,8 +60,9 @@ nav ul a{
     transition: 0.5s;
 }
 nav ul a:hover{
+    color: #1A0B2E;
     background: linear-gradient(to top right, #F7E93F, #FB09B4, #9448ca);
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 5px;
 }
 
@@ -111,7 +113,7 @@ nav h2 .gradient{
     width: 20%;
 }
 
-.banner-badge{
+.flash-badge{
     position: absolute;
     z-index: 7;
     color: #1A0B2E;
@@ -120,20 +122,26 @@ nav h2 .gradient{
     background-color: #00FF88;
     padding: 8px 16px;
     border-radius: 1000px;
+    box-shadow: 0px 3px 15px #00FF88;
     top: 5%;
     right: 22%;
-    box-shadow: 0 3px 27px #00FF88;
+    
+    animation-name: myAnimation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes myAnimation {
+  25%  {right:200px; top:50px;}
 }
 
 .banner-content h1{
     font-size: 3.75rem;
     font-weight: 800;
     margin-top: 40px;
-    color: transparent;
-    background: linear-gradient(to top right, #F7E93F, #fe4040, #9100F8, #dbf800,#9100F8,#cff800);
-    background-clip: text;
-    background-size: 200%;
-    animation: Animate 2s linear infinite;
+    color: white;
 }
 
 .banner-container p{
@@ -164,8 +172,9 @@ nav h2 .gradient{
     padding: 12px 20px;
     border-radius: 1000px;
 }
+/* Banner End  */
 
-/* About section  */
+/* About Start  */
 .about-container{
     background-color: #1A0B2E;
     padding-top: 50px;
@@ -216,9 +225,9 @@ nav h2 .gradient{
 .about-card-item p{
     color: white;
 }
+/* About End  */
 
-
-/* Card Section  */
+/* Card Start  */
 .card{
     background-color: #230E3D;
     padding: 120px 0;
@@ -232,11 +241,7 @@ nav h2 .gradient{
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    color: transparent;
-    background: linear-gradient(to top right, #F7E93F, #fe4040, #9100F8, #dbf800,#9100F8,#cff800);
-    background-clip: text;
-    background-size: 200%;
-    animation: Animate 2s linear infinite;
+    color: white;
     margin-bottom: 40px;
 }
 
@@ -286,9 +291,9 @@ nav h2 .gradient{
 .box-1 img{
     margin-top: 70px;
 }
+/* Card End  */
 
-
-/* Feature Section  */
+/* Feature Start  */
 .feature{
     background-color: #1A0B2E;
     padding: 120px 0;
@@ -325,26 +330,26 @@ nav h2 .gradient{
     width: 100%;
 }
 
-.v-descrip{
+.episode-des{
     padding: 24px;
     background-color: #250D44;
 }
 
-.v-descrip h3{
+.episode-des h3{
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 12px;
 }
 
-.v-descrip p{
+.episode-des p{
     color: white;
     opacity: 60%;
     line-height: 24px;
     margin-bottom: 24px;
 }
 
-.v-descrip .time{
+.episode-des .time{
     display: flex;
     justify-content: left;
     align-items: center;
@@ -352,13 +357,14 @@ nav h2 .gradient{
     gap: 6px;
 }
 
-.v-descrip .time h6{
+.episode-des .time h6{
     font-size: 1rem;
     font-weight: 600;
     color: #00FF88;
 }
+/* Feature Start  */
 
-/* Host Section  */
+/* Host Start  */
 .host-container{
     margin: 0 auto;
 }
@@ -402,7 +408,7 @@ nav h2 .gradient{
     gap: 18px;
 }
 
-.icon-link{
+.icon-link {
     border: 1px solid #533C72;
     width: 48px;
     height: 48px;
@@ -410,10 +416,14 @@ nav h2 .gradient{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
+.icon-link:hover{
+    background-color: #ffffff;
+}
+/* Host End  */
 
-
-/* Footer  */
+/* Footer Start */
 footer{
     background: url("../assets/footer-bg.png");
     padding: 120px 0;
@@ -463,16 +473,9 @@ footer{
     opacity: 60%;
 }
 
+/* Footer End */
 
 
-
-
-/* Animation  */
-@keyframes Animate{
-    to{
-        background-position: 200%;
-    }
-}
 
 /* Extra for responsive */
 
