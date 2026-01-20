@@ -33,7 +33,7 @@ button:hover{
 
 nav{
     background-color: #1A0B2E;
-    border-bottom: 0.7px solid #7b3fc9;;
+    border-bottom: 0.7px solid #7b3fc9;
 }
 
 .nav-container{
@@ -210,7 +210,7 @@ nav .menu-display{
     text-align: center;
     padding-top: 80px;
     gap: 80px;
-    border-top: 1px solid rgba(255, 255, 255, 0.562);
+    border-top: 0.7px solid #7b3fc9;;
     margin: 0 auto;
 }
 
@@ -483,7 +483,11 @@ footer{
 }
 /* Footer End */
 
-/* Responsive Codes */
+/* Responsive For Medium Devices */
+@media screen and (max-width: 992px){
+  
+}
+/* Responsive For Small Devices */
 @media screen and (max-width: 576px)
 {
     .container {
@@ -501,17 +505,18 @@ footer{
         display: block;
     }
 
-    /* Hero Section  */
-    .hero {
+    /* Banner Section  */
+    .banner {
         padding: 60px 0;
     }
-    /* .hero-badge {
-        right: 15%;
-    } */
-    .hero-content h1 {
+    .banner-content h1 {
         font-size: 3rem;
     }
-    .hero-btn {
+    .banner-img{
+        width:70%;
+        margin: 0 auto;
+    }
+    .banner-btn {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -519,14 +524,13 @@ footer{
         flex-wrap: nowrap;
     }
 
-
-    .hero-btn1, .hero-btn2 {
+    .banner-btn1, .banner-btn2 {
         padding: 10px 14px;
         font-size: 0.85rem;
         white-space: nowrap;
     }
 
-    /* About Card  */
+    /* About Section  */
     .about-content h1{
         font-size: 2.5rem;
     }
@@ -539,8 +543,11 @@ footer{
     .about-card-item h1 {
         font-size: 2rem;
     }
+    .about-content p{
+    font-size: 0.8rem;
+    }
 
-    /* Why choose card  */
+    /* Why choose Section  */
     .card-container h1{
         font-size: 2.2rem;
     }
@@ -554,7 +561,7 @@ footer{
         grid-area: auto; 
     }
     .card-box {
-        text-align: left;
+        text-align:center;
         padding: 30px;
     }
     .box-1 img{
@@ -580,7 +587,7 @@ footer{
         justify-content: center;
     }
 
-    /* Footer  */
+    /* Footer Section  */
    .footer-link{
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -597,6 +604,9 @@ footer{
     .footer-container h1{
         font-size: 3rem;
         margin-bottom: 24px;
+    }
+    .footer-container p{
+    font-size: 0.8rem;
     }
 }
 
