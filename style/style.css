@@ -317,7 +317,7 @@ nav .menu-display{
 .feature-video-container{
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     gap: 30px;
 }
 
@@ -333,10 +333,6 @@ nav .menu-display{
     width: 100%;
     aspect-ratio: 16 / 9;
 }
-/* iframe {
-    width: 100%;
-    
-} */
 
 .episode-des{
     padding: 24px;
@@ -483,10 +479,12 @@ footer{
 }
 /* Footer End */
 
-/* Responsive For Medium Devices */
+/* Responsive For Medium Devices
 @media screen and (max-width: 992px){
   
-}
+} */
+
+
 /* Responsive For Small Devices */
 @media screen and (max-width: 576px)
 {
@@ -495,7 +493,7 @@ footer{
         margin: 0 auto;
     }
 
-    /* Navbar */
+    /* Nav Section */
     .nav-container ul, 
     .nav-container .btn {
         display: none;
@@ -549,7 +547,7 @@ footer{
     font-size: 0.8rem;
     }
 
-    /* Why choose Section  */
+    /* Card Section  */
     .card-container h1{
         font-size: 2.2rem;
     }
@@ -574,6 +572,13 @@ footer{
     .feature-container h1{
         font-size: 2.5rem;
     }
+    .episode-des h3{
+        font-size: 1.2rem;
+    }
+    .episode-des p{
+        font-size: 0.9rem;
+    }
+
     .feature-video-container{
         flex-direction: column;
         gap: 24px;
